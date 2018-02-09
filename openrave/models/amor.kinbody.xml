@@ -1,0 +1,175 @@
+<!-- amor.kinbody.xml  -->
+
+<KinBody name="amorKinbody">
+    <!--Body type="dynamic" name="link0"-->
+    <Body type="static" name="link0">
+        <Geom type="trimesh">
+            <!-- <rotationaxis>0 0 1 180</rotationaxis> -->
+            <translation>0 0 0</translation>
+            <data>./stl/amor01.stl 0.001</data> 
+            <render>./stl/amor01.stl 0.001</render> 
+	</Geom>
+        <mass type="sphere">
+            <total>.1</total>
+            <radius>1</radius>
+        </mass>
+    </Body>
+    <Body name="link1">
+        <offsetfrom>link0</offsetfrom>
+        <Geom type="trimesh">
+            <translation>0 0 0</translation>
+            <data>./stl/amor02.stl 0.001</data> 
+            <render>./stl/amor02.stl 0.001</render> 
+        </Geom>
+        <mass type="sphere">
+            <total>.1</total>
+            <radius>1</radius>
+        </mass>
+    </Body>
+ <!-- Eje 1 -->
+    <Joint name="M1" type="hinge">
+        <offsetfrom>link0</offsetfrom>
+        <body>link0</body>
+        <body>link1</body>
+        <axis>0 0 1</axis>
+        <maxvel>2</maxvel>
+    </Joint>
+    <Body name="link2">
+        <offsetfrom>link1</offsetfrom>
+        <Geom type="trimesh">
+            <translation>0 0 0</translation>
+            <data>./stl/amor03.stl 0.001</data> 
+            <render>./stl/amor03.stl 0.001</render>
+        </Geom>
+        <mass type="sphere">
+            <total>.1</total>
+            <radius>1</radius>
+        </mass>
+    </Body>
+ <!-- Eje 2 -->
+    <Joint name="M2" type="hinge">
+        <offsetfrom>link1</offsetfrom>
+        <body>link1</body>
+        <body>link2</body>
+        <axis>0 -1 0</axis>
+        <anchor>0.0623 0 0.155</anchor>
+        <!--<limitsdeg>-125 40</limitsdeg>-->
+        <maxvel>2</maxvel>
+	
+    </Joint>
+    <Body name="link3">
+        <offsetfrom>link2</offsetfrom>
+        <Geom type="trimesh">
+            <translation>0 0 0</translation>
+            <data>./stl/amor04.stl 0.001</data> 
+            <render>./stl/amor04.stl 0.001</render> 
+        </Geom>
+        <mass type="sphere">
+            <total>.1</total>
+            <radius>1</radius>
+        </mass>
+    </Body>
+ <!-- Eje 2.5 -->
+    <Joint name="M3" type="hinge">
+        <offsetfrom>link2</offsetfrom>
+        <body>link2</body>
+        <body>link3</body>
+        <axis>0 0 1</axis>
+        <anchor>0.0623 0 0.455</anchor>
+        <!--<limitsdeg>-150 150</limitsdeg>-->
+        <maxvel>2</maxvel>
+      </Joint>
+    <Body name="link4">
+        <offsetfrom>link3</offsetfrom>
+        <Geom type="trimesh">
+            <!--<rotationaxis>0 0 0 0</rotationaxis>-->
+            <translation>0 0 0</translation>
+            <data>./stl/amor05.stl 0.001</data> 
+            <render>./stl/amor05.stl 0.001</render> 
+        </Geom>
+        <mass type="sphere">
+            <total>.1</total>
+            <radius>1</radius>
+        </mass>
+    </Body>
+ <!-- Eje 3 -->
+    <Joint name="M4" type="hinge">
+        <offsetfrom>link3</offsetfrom>
+        <body>link3</body>
+        <body>link4</body>
+        <axis>0 -1 0</axis>
+        <anchor>0.1593 0 0.57446</anchor>
+        <!--<limitsdeg>0 154</limitsdeg>-->
+        <maxvel>2</maxvel>
+    </Joint>
+    <Body name="link5">
+        <offsetfrom>link0</offsetfrom>
+        <Geom type="trimesh">
+            <!--<rotationaxis>0 0 1 180</rotationaxis>-->
+            <translation>0 0 0</translation>
+             <data>./stl/amor06.stl 0.001</data> 
+             <render>./stl/amor06.stl 0.001</render> 
+        </Geom>
+        <mass type="sphere">
+            <total>.1</total>
+            <radius>1</radius>
+        </mass>
+    </Body>
+ <!-- Eje 4 -->
+    <Joint name="M5" type="hinge">
+        <offsetfrom>link4</offsetfrom>
+        <body>link4</body>
+        <body>link5</body>
+        <axis>0 0 1</axis>
+        <anchor>0.1593 0 0.6245</anchor>
+        <maxvel>2</maxvel>
+    </Joint>
+    <Body name="link6">
+        <offsetfrom>link0</offsetfrom>
+        <Geom type="trimesh">
+           <!-- <rotationaxis>0 0 1 180</rotationaxis>-->
+            <translation>0 0 0</translation>
+             <data>./stl/amor07.stl 0.001</data> 
+             <render>./stl/amor07.stl 0.001</render> 
+        </Geom>
+        <mass type="sphere">
+            <total>.1</total>
+            <radius>1</radius>
+        </mass>
+    </Body>
+ <!-- Eje 5 -->
+    <Joint name="M6" type="hinge">
+        <offsetfrom>link5</offsetfrom>
+        <body>link5</body>
+        <body>link6</body>
+        <axis>0 -1 0</axis>
+        <anchor>0.2092 0 0.92946</anchor>
+	<!--<limitsdeg>-90 90</limitsdeg>-->
+        <maxvel>2</maxvel>
+    </Joint>
+
+    <Body name="link7">
+        <offsetfrom>link1</offsetfrom>
+        <Geom type="trimesh">
+            <translation>0 0 0</translation>
+            <data>./stl/amorGripper.stl 0.001</data> 
+            <render>./stl/amorGripper.stl 0.001</render>
+        </Geom>
+        <mass type="sphere">
+            <total>.1</total>
+            <radius>1</radius>
+        </mass>
+    </Body>
+ <!-- Eje 6 -->
+    <Joint name="M7" type="hinge">
+        <offsetfrom>link6</offsetfrom>
+        <body>link6</body>
+        <body>link7</body>
+        <axis>0 0 -1</axis>
+        <initial>-1.570796326794</initial>
+        <anchor>0.2092 0 0.92946</anchor>
+        <maxvel>2</maxvel>
+    </Joint>
+
+</KinBody>
+

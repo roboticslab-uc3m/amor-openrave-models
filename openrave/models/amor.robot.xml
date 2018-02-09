@@ -1,0 +1,13 @@
+<!-- amor.robot.xml -->
+
+<Robot name="amorRobot">
+    <KinBody file="./amor.kinbody.xml"/>
+    <Manipulator name="amorManipulator">
+    	<base>link0</base>
+        <effector>link7</effector>
+    </Manipulator>
+    <jointvalues>-1.570796 0 0 -3.141592 3.141592 1.570796 -1.570796</jointvalues>
+</Robot>
+
+
+
