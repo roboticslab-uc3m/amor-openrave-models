@@ -6,8 +6,8 @@
         <Geom type="trimesh">
             <!-- <rotationaxis>0 0 1 180</rotationaxis> -->
             <translation>0 0 0</translation>
-            <data>./stl/amor01.stl 0.001</data> 
-            <render>./stl/amor01.stl 0.001</render> 
+            <data>./stls/amor01.stl 0.001</data> 
+            <render>./stls/amor01.stl 0.001</render> 
 	</Geom>
         <mass type="sphere">
             <total>.1</total>
@@ -18,8 +18,8 @@
         <offsetfrom>link0</offsetfrom>
         <Geom type="trimesh">
             <translation>0 0 0</translation>
-            <data>./stl/amor02.stl 0.001</data> 
-            <render>./stl/amor02.stl 0.001</render> 
+            <data>./stls/amor02.stl 0.001</data> 
+            <render>./stls/amor02.stl 0.001</render> 
         </Geom>
         <mass type="sphere">
             <total>.1</total>
@@ -38,8 +38,8 @@
         <offsetfrom>link1</offsetfrom>
         <Geom type="trimesh">
             <translation>0 0 0</translation>
-            <data>./stl/amor03.stl 0.001</data> 
-            <render>./stl/amor03.stl 0.001</render>
+            <data>./stls/amor03.stl 0.001</data> 
+            <render>./stls/amor03.stl 0.001</render>
         </Geom>
         <mass type="sphere">
             <total>.1</total>
@@ -61,8 +61,8 @@
         <offsetfrom>link2</offsetfrom>
         <Geom type="trimesh">
             <translation>0 0 0</translation>
-            <data>./stl/amor04.stl 0.001</data> 
-            <render>./stl/amor04.stl 0.001</render> 
+            <data>./stls/amor04.stl 0.001</data> 
+            <render>./stls/amor04.stl 0.001</render> 
         </Geom>
         <mass type="sphere">
             <total>.1</total>
@@ -84,8 +84,8 @@
         <Geom type="trimesh">
             <!--<rotationaxis>0 0 0 0</rotationaxis>-->
             <translation>0 0 0</translation>
-            <data>./stl/amor05.stl 0.001</data> 
-            <render>./stl/amor05.stl 0.001</render> 
+            <data>./stls/amor05.stl 0.001</data> 
+            <render>./stls/amor05.stl 0.001</render> 
         </Geom>
         <mass type="sphere">
             <total>.1</total>
@@ -107,8 +107,8 @@
         <Geom type="trimesh">
             <!--<rotationaxis>0 0 1 180</rotationaxis>-->
             <translation>0 0 0</translation>
-             <data>./stl/amor06.stl 0.001</data> 
-             <render>./stl/amor06.stl 0.001</render> 
+             <data>./stls/amor06.stl 0.001</data> 
+             <render>./stls/amor06.stl 0.001</render> 
         </Geom>
         <mass type="sphere">
             <total>.1</total>
@@ -129,8 +129,8 @@
         <Geom type="trimesh">
            <!-- <rotationaxis>0 0 1 180</rotationaxis>-->
             <translation>0 0 0</translation>
-             <data>./stl/amor07.stl 0.001</data> 
-             <render>./stl/amor07.stl 0.001</render> 
+             <data>./stls/amor07.stl 0.001</data> 
+             <render>./stls/amor07.stl 0.001</render> 
         </Geom>
         <mass type="sphere">
             <total>.1</total>
@@ -152,8 +152,8 @@
         <offsetfrom>link1</offsetfrom>
         <Geom type="trimesh">
             <translation>0 0 0</translation>
-            <data>./stl/amorGripper.stl 0.001</data> 
-            <render>./stl/amorGripper.stl 0.001</render>
+            <data>./stls/amorGripper.stl 0.001</data> 
+            <render>./stls/amorGripper.stl 0.001</render>
         </Geom>
         <mass type="sphere">
             <total>.1</total>
