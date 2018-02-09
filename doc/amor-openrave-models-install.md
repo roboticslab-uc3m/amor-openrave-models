@@ -11,7 +11,7 @@ Installation steps:
 cd  # go home
 mkdir -p repos; cd repos                                                # create $HOME/repos and enter it
 git clone https://github.com/roboticslab-uc3m/amor-openrave-models.git  # download repository
-cd asibot-openrave-models; mkdir build; cd build; cmake ..              # configure the build
+cd amor-openrave-models; mkdir build; cd build; cmake ..                # configure the build
 sudo make install                                                       # install
 ```
 
