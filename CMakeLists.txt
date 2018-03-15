@@ -3,6 +3,9 @@ cmake_minimum_required(VERSION 2.8.9)
 # Define a project.
 project(AMOR_OPENRAVE_MODELS)
 
+# Load custom CMake modules.
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+
 # Find YARP and load configuration, fail otherwise.
 find_package(YARP REQUIRED)
 
@@ -39,10 +42,5 @@ file(WRITE ${CMAKE_BINARY_DIR}/AMOR_OPENRAVE_MODELSConfig.cmake "# Dummy CMake c
 install(FILES ${CMAKE_BINARY_DIR}/AMOR_OPENRAVE_MODELSConfig.cmake
         DESTINATION ${PROJECT_NAME}_CMAKE_DESTINATION)
 
-# Configure CMake uninstall script.
-configure_file("${CMAKE_SOURCE_DIR}/cmake/templates/AMOR_OPENRAVE_MODELSConfigUninstall.cmake.in"
-               "${CMAKE_BINARY_DIR}/AMOR_OPENRAVE_MODELSConfigUninstall.cmake" @ONLY)
-
 # Add uninstall rule.
-add_custom_target(uninstall COMMAND ${CMAKE_COMMAND} -P
-                  "${CMAKE_BINARY_DIR}/AMOR_OPENRAVE_MODELSConfigUninstall.cmake")
+include(AddUninstallTarget)
