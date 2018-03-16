@@ -30,9 +30,9 @@ export(PACKAGE AMOR_OPENRAVE_MODELS)
 include(GNUInstallDirs)
 
 if(WIN32)
-    set(AMOR_MODELS_CMAKE_DESTINATION "CMake")
+    set(AMOR_OPENRAVE_MODELS_CMAKE_DESTINATION "CMake")
 else()
-    set(AMOR_MODELS_CMAKE_DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/AMOR_OPENRAVE_MODELS")
+    set(AMOR_OPENRAVE_MODELS_CMAKE_DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/AMOR_OPENRAVE_MODELS")
 endif()
 
 # Create dummy CMake configuration export file.
@@ -40,7 +40,7 @@ file(WRITE ${CMAKE_BINARY_DIR}/AMOR_OPENRAVE_MODELSConfig.cmake "# Dummy CMake c
 
 # Install CMake configuration file.
 install(FILES ${CMAKE_BINARY_DIR}/AMOR_OPENRAVE_MODELSConfig.cmake
-        DESTINATION ${PROJECT_NAME}_CMAKE_DESTINATION)
+        DESTINATION ${AMOR_OPENRAVE_MODELS_CMAKE_DESTINATION})
 
 # Add uninstall rule.
 include(AddUninstallTarget)
