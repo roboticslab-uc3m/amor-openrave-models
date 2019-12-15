@@ -2,9 +2,9 @@
 
 Dependencies:
 
-- [Install CMake 3.5+](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install-cmake.md)
-- [Install YCM 0.10+](https://github.com/roboticslab-uc3m/installation-guides/blob/master/install-ycm.md)
-- [Install YARP 3.0+](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install-yarp.md) (CMake modules)
+- [Install CMake 3.12+](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install-cmake.md)
+- [Install YCM 0.11+](https://github.com/roboticslab-uc3m/installation-guides/blob/master/install-ycm.md)
+- [Install YARP 3.2+](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install-yarp.md) (CMake modules)
 
 Installation steps:
 
